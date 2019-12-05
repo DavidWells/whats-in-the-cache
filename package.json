@@ -1,0 +1,12 @@
+{
+  "name": "whats-in-the-cache",
+  "version": "1.0.0",
+  "description": "Recursively get list of files in the build cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -10,7 +10,10 @@ npm install whats-in-the-cache
 
 ## Usage
 
+Add the package to your project and write a small build script.
+
 ```js
+// check-cache.js
 const path = require('path')
 const getCacheInfo = require('whats-in-the-cache')
 
@@ -27,3 +30,22 @@ getCacheInfo({
   console.log(e)
 })
 ```
+
+`getCacheInfo` takes 2 args
+
+- `cacheDirectory` - where the cache directory lives
+- `outputPath` (optional) - where the manifest of files in the cache will be written to
+
+Then inside of your projects build steps, run the script on a pre or post build hook.
+
+```json
+{
+  "name": "your-project",
+  "scripts": {
+    "build": "npm run xyz",
+    "postbuild": "node check-cache.js"
+  }
+}
+```
+
+After the build is complete, download the built assets and inspect your cache manifest

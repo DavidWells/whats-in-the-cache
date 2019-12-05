@@ -48,4 +48,8 @@ Then inside of your projects build steps, run the script on a pre or post build 
 }
 ```
 
-After the build is complete, download the built assets and inspect your cache manifest
+After the build is complete, download the built assets and inspect your cache manifest.
+
+In netlify you can download the build with this icon
+
+![image](https://user-images.githubusercontent.com/532272/70269557-7faf2600-1757-11ea-8a3b-4ce38ce6d6d2.png)
